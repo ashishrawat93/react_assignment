@@ -1,0 +1,135 @@
+.App {
+  text-align:center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 3.0em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+.ul {
+  justify-content:center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+
+}
+.imagecontainer {
+  display: inline-block;
+  width:100%;
+  height:300px;
+  overflow:hidden;
+  margin-top: 10px;
+
+  /*padding: 0px;*/
+
+}
+.imagecontainer img{
+  width: auto;
+  object-fit:cover;
+  height:100%;
+  display: inline-block;
+  margin-top: 20px;
+
+ }
+ .eachimage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*background-color: grey;*/
+   background-color: #d1d1d1;
+}
+.eachimage2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 4px solid black;
+  /*background-color: grey;*/
+   background-color: #a8a7a4;
+}
+ .eachline{
+  margin-right: 20px;
+  /*border: 0.5px solid black;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  /*background-color: #d1d1d1;*/
+ }
+
+.dropdown {
+    margin:10px;
+    height: 40px;
+    width:350px;
+    /*border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sortandfilter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  background-color:#D2CFCF;
+  margin-bottom: 10px;
+  border-bottom: 2px solid grey;
+}
+.select {
+  font-size:20px;
+  width:200px;
+  height:30px;
+}
+.selectsort {
+  font-size:20px;
+  width:200px;
+  height:30px;
+  /*border-left-width: 3px solid red; */
+}
+.option {
+  font-size:20px;
+
+}
+.dogname {
+  font-size: 1.5em;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+.dogname2 {
+  font-size: 1.2em;
+  margin-top: 7px;
+  margin-bottom: 3px;
+}
+.footer{
+  margin-top:700px;
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+
+}
+.emptyspace {
+  margin-bottom:1000px;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

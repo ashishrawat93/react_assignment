@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <link rel="stylesheet" href="./React App_files/bootstrap.min.css">
+<link rel="stylesheet" href="./React App_files/bootstrap-theme.min.css">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.ul {
+	list-style-type: none;
+}
+</style><style type="text/css">.App {
+  text-align: center;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 180px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 3.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.ul {
+  -ms-flex-pack:center;
+      justify-content:center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+
+}
+.imagecontainer {
+  display: inline-block;
+  width:100%;
+  height:300px;
+  overflow:hidden;
+  margin-top: 10px;
+
+  /*padding: 0px;*/
+
+}
+.imagecontainer img{
+  width: auto;
+  -o-object-fit:cover;
+     object-fit:cover;
+  height:100%;
+  display: inline-block;
+  margin-top: 20px;
+
+ }
+ .eachimage {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  /*background-color: grey;*/
+   background-color: #d1d1d1;
+}
+.eachimagedetails {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: grey;
+}
+ .eachline{
+  margin-right: 20px;
+  /*border: 0.5px solid black;*/
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  /*background-color: #d1d1d1;*/
+ }
+
+.dropdown {
+    margin:10px;
+    height: 40px;
+    width:350px;
+    /*border: 1px solid black; */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+.sortandfilter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack:center;
+      justify-content:center;
+  background-color:#D2CFCF;
+  margin-bottom: 10px;
+}
+.select {
+  font-size:20px;
+  width:200px;
+  height:25px;
+}
+.selectsort {
+  font-size:20px;
+  width:200px;
+  height:25px;
+  /*border-left-width: 3px solid red; */
+}
+.option {
+  font-size:20px;
+
+}
+.dogname {
+  font-size: 1.5em;
+  margin-top: 3px;
+}
+.dogname2 {
+  font-size: 1.0em;
+  margin-top: 3px;
+}
+.dognamebox {
+
+  font-size: 1.5em;
+  margin-top: 1px;
+  padding: 2px 2px 2px 2px;
+  /*border: 1px solid sblack;*/
+  background-color: #d1d1d1;
+}
+
+
+
+@-webkit-keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+
+
+@keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+</style></head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"><div class="App"><header class="App-header"><h1 class="App-title">Doggie Woggie</h1><h3> Pick Me....Choose Me....Love Me</h3></header><main><div class="sortandfilter"><div class="dropdown"><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</h4><select class="select"><option value="All">All</option><option value="Black">Black</option><option value="Brown">Brown</option><option value="White">White</option><option value="Gold">Gold</option></select></div><div class="dropdown"><h4>&nbsp;&nbsp;&nbsp;&nbsp;Size &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</h4><select class="select"><option value="All">All</option><option value="Small">Small</option><option value="Medium">Medium</option><option value="Large">Large</option></select></div><div class="dropdown"><h4>Popularity :&nbsp;&nbsp;</h4><select class="select"><option value="All">All</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select></div><div class="dropdown"><h4>Sort By &nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;</h4><select class="selectsort"><option class="option" value="name,asc">A-Z</option><option class="option" value="name,desc">Z-A</option><option class="option" value="price,asc">Price Low to High</option><option class="option" value="price,desc">Price High to Low</option><option class="option" value="popularity,asc">Popularity Low to High</option><option class="option" value="popularity,desc">Popularity High to Low</option></select></div></div><div class="ul"><div class="eachline"><div class="imagecontainer"><img src="./React App_files/affenpinscher.58ba7785.jpg"></div><div class="eachimage"><p class="dogname"><strong> Affenpinscher </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/americaneskimo.1bce5ff3.jpg"></div><div class="eachimage"><p class="dogname"><strong> American Eskimo </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Medium </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/bichon.6d23816e.jpg"></div><div class="eachimage"><p class="dogname"><strong> Bichon </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/bloodhound.c528b741.jpg"></div><div class="eachimage"><p class="dogname"><strong> Bloodhound </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Medium </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/bullterrier.6a72165c.jpg"></div><div class="eachimage"><p class="dogname"><strong> Bull Terrier </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/bulldogbrown.0e612708.jpg"></div><div class="eachimage"><p class="dogname"><strong> Bulldog </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/bulldogblack.2951706a.jpg"></div><div class="eachimage"><p class="dogname"><strong> Bulldog </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/bullmastiff.2c1991fb.jpg"></div><div class="eachimage"><p class="dogname"><strong> Bullmastiff </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Medium </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/chihuahua.7c549f67.jpg"></div><div class="eachimage"><p class="dogname"><strong> Chihuahua </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/corgibrown.193a3abe.jpg"></div><div class="eachimage"><p class="dogname"><strong> Corgi </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/corgiwhite.da90b6ee.jpg"></div><div class="eachimage"><p class="dogname"><strong> Corgi </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/dalmation.839bf633.jpg"></div><div class="eachimage"><p class="dogname"><strong> Dalmation </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/foxterrier.a38e0be3.jpg"></div><div class="eachimage"><p class="dogname"><strong> Fox Terrier </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/germanshephard.6a0c59c0.jpg"></div><div class="eachimage"><p class="dogname"><strong> German Shepherd </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/goldenretriver.baa3d183.jpg"></div><div class="eachimage"><p class="dogname"><strong> Golden Retriver </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/labradorretrivergold.da69619b.jpg"></div><div class="eachimage"><p class="dogname"><strong> Labrador Retriver </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/labradorretriverblack.088910e3.jpg"></div><div class="eachimage"><p class="dogname"><strong> Labrador Retriver </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/newfoundlandblack.091cb728.jpg"></div><div class="eachimage"><p class="dogname"><strong> Newfoundland </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/newfoundlandbrown.65af5760.jpg"></div><div class="eachimage"><p class="dogname"><strong> Newfoundland </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/pekingese.8a997d4e.jpg"></div><div class="eachimage"><p class="dogname"><strong> Pekingese </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/pug.94ca1939.jpg"></div><div class="eachimage"><p class="dogname"><strong> Pug </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/rottweiler.0abfb7c2.jpg"></div><div class="eachimage"><p class="dogname"><strong> Rottweiler </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/shihtzublack.8b381acb.jpg"></div><div class="eachimage"><p class="dogname"><strong> Shih Tzu </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/shihtzuwhite.5a552fe3.jpg"></div><div class="eachimage"><p class="dogname"><strong> Shih Tzu </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/siberianhusky.963456da.jpg"></div><div class="eachimage"><p class="dogname"><strong> Siberian Husky </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Large </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/welshterrier.73a5c3d1.jpg"></div><div class="eachimage"><p class="dogname"><strong> Welsh Terrier </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div><div class="eachline"><div class="imagecontainer"><img src="./React App_files/yorkipoo.6a944606.jpg"></div><div class="eachimage"><p class="dogname"><strong> Yorkipoo </strong></p><p class="dogname2">&nbsp;&nbsp;&nbsp; Small </p></div></div></div></main></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script type="text/javascript" src="./React App_files/bundle.js"></script>
+
+</body></html>
