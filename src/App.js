@@ -64,10 +64,11 @@ class App extends Component {
         <header className="App-header">
            
           <h1 className="App-title">Doggie Woggie</h1>
-          <p> Pick Me... &nbsp;&nbsp;&nbsp; Choose Me.. &nbsp;&nbsp;&nbsp;  Love Me</p><p>Find your pet</p>
+          <h4 className="me"> Pick Me... &nbsp;&nbsp;&nbsp; Choose Me.. &nbsp;&nbsp;&nbsp;  Love Me</h4><h5>Filter and Sort, till you find yours!!</h5>
 
           
         </header>
+
         <main> 
           <div className="sortandfilter">
             <ColorFilter
